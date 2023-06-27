@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+
+{% block title %} Login Page {% endblock %}
+
+{% block content %}
+
+<section style="background-color: pink;height:100vh;">
+    <div class="container" style="height=100%;">
+        <div class="d-flex justify-content-center align" style="height:100%">
+            <form action="" method="POST">
+                <label style="font-size: 2rem;" for="orderID">Order ID</label><br>
+                <input style="font-size: 2rem;" type="text" name="orderID"><br>
+
+                <label style="font-size: 2rem;" for="Rate">Rate</label><br>
+                <input type="radio" id="rate1" name="rate" value="rate" style="height:35px; width:35px; vertical-align: middle;" checked>
+                <label for="rate1">Bad</label>
+                <input type="radio" id="rate2" name="rate" value="rate" style="height:35px; width:35px; vertical-align: middle;" checked>
+                <label for="rate2">Med</label>
+                <input type="radio" id="rate3" name="rate" value="rate" style="height:35px; width:35px; vertical-align: middle;" checked>
+                <label for="rate3">Good</label><br><br>
+                <label style="font-size: 2rem;" for="comment">Comment</label><br>
+                <input style="font-size: 2rem;" type="text" name="comment"><br>
+                <label style="font-size: 2rem;" for="orderDate">Order Date</label><br>
+                <input style="font-size: 2rem;" type="text" name="orderDate"><br>
+                <label style="font-size: 2rem;" for="deliveryStatus">Delivery Status</label><br>
+                <input style="font-size: 2rem;" type="text" name="deliveryStatus"><br><br>
+                <label style="font-size: 2rem;" for="owns_o">Prescription ID</label><br>
+                <input style="font-size: 2rem;" type="text" name="owns_o"><br><br>
+
+                <label style="font-size: 2rem;" for="quantity">Quantity(between 1 and 5):</label><br>
+                <input type="number" id="quantity" name="quantity" min="1" max="5">
+
+                <label style="font-size: 2rem;" for="totalCost">Total Cost=</label>
+                <output style="font-size: 2rem;" name="totalCost" for="quantity + 20"></output><br>
+
+
+
+                <button class="btn btn-primary" style="font-size: 2rem;" type="submit">Order</button>
+
+            </form>
+        </div>
+    </div>
+
+</section>
+
+{% endblock %}

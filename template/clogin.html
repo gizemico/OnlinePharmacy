@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block title %} Login Page {% endblock %}
+
+{% block content %}
+<section style="background-color: LightBlue;height:100vh;">
+    <div class="container" style="height=100%;">
+        <div class="d-flex justify-content-center align" style="height:100%">
+            <form action="" method="POST">
+                <label style="font-size: 2rem;" for="trncid">TRNCID</label><br>
+                <input style="font-size: 2rem;" type="text" name="trncid"><br>
+                <label style="font-size: 2rem;" for="password">Password</label><br>
+                <input style="font-size: 2rem;" type="text" name="password"><br><br>
+                <button class="btn btn-primary" style="font-size: 2rem;" type="submit">Login</button>
+            </form>
+        </div>
+    </div>
+
+</section>
+
+{% endblock %}

@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block title %} Login Page {% endblock %}
+
+{% block content %}
+<section style="background-color: pink;height:100vh;">
+    <div class="container" style="height=100%;">
+        <div class="d-flex justify-content-center align" style="height:100%">
+            <form action="" method="POST">
+                <label style="font-size: 2rem;" for="prescriptionID">Prescription ID</label><br>
+                <input style="font-size: 2rem;" type="text" name="prescriptionID"><br>
+                <label style="font-size: 2rem;" for="prescriptionExpirationDate">Prescription Expiration Date</label><br>
+                <input style="font-size: 2rem;" type="text" name="prescriptionExpirationDate"><br><br>
+                <label style="font-size: 2rem;" for="medicineID">Medicine ID</label><br>
+                <input style="font-size: 2rem;" type="text" name="medicineID"><br>
+                <label style="font-size: 2rem;" for="trncid">Patient TRNCID</label><br>
+                <input style="font-size: 2rem;" type="text" name="trncid"><br>
+                <button class="btn btn-primary" style="font-size: 2rem;" type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+
+</section>
+
+{% endblock %}

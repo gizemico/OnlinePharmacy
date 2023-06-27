@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+
+{% block title %} Register Page {% endblock %}
+
+{% block content %}
+
+<section style="background-color: LightBlue;height:100vh;">
+    <div class="container" style="height=100%;">
+        <div class="d-flex justify-content-center align" style="height:100%">
+            <form action="" method="POST">
+                <label style="font-size: 2rem;" for="name">Name</label><br>
+                <input style="font-size: 2rem;" type="text" name = "name"><br>
+                <label style="font-size: 2rem;" for="trncid">TRNCID</label><br>
+                <input style="font-size: 2rem;" type="text" name = "trncid"><br>
+                <label style="font-size: 2rem;" for="email">Email</label><br>
+                <input style="font-size: 2rem;" type="text" name = "email"><br>
+                <label style="font-size: 2rem;" for="password">Password</label><br>
+                <input style="font-size: 2rem;" type="text" name = "password"><br><br>
+                <label style="font-size: 2rem;" for="phoneNo">PhoneNumber</label><br>
+                <input style="font-size: 2rem;" type="text" name = "phoneNo"><br><br>
+                <label style="font-size: 2rem;" for="address">Address</label><br>
+                <input style="font-size: 2rem;" type="text" name = "address"><br><br>
+                <button class="btn btn-primary" style="font-size: 2rem;" type="submit">Register</button>
+                {% with messages = get_flashed_messages() %}
+                {% if messages %}
+                <u1 class= flashes>
+                    {% for message in message %}
+                    <div class="alert alert-primary" role="alert">
+                        {{message}}
+                    </div>
+                    {% endfor %}
+                </u1>
+                {% endif %}
+                {% endwith %}
+            </form>
+        </div>
+    </div>
+
+</section>
+
+{% endblock %}
